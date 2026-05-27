@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTS Cache System</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🔊 TTS Audio Caching System</h1>
+
+        <textarea
+            id="textInput"
+            placeholder="Enter text here..."
+        ></textarea>
+
+        <div class="btn-group">
+
+            <button onclick="generateSpeech()">
+                Generate Speech
+            </button>
+
+            <button onclick="clearCache()" class="clear-btn">
+                Clear Cache
+            </button>
+
+        </div>
+
+        <p id="status"></p>
+
+        <audio id="audioPlayer" controls></audio>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
